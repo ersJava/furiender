@@ -7,69 +7,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome Page</title>
     <link rel="stylesheet" type="text/css" href="assets/css/paper.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div wrapper>
+    <!-- Start of container for content-box -->
+    <div class="container">
+        <!-- Main content box -->
+        <div class="border-dashed" id="content-box">
 
-        <h1>Furinder<span class="badge">Pupmate Finder
-            </span></h1>
-        <div form>
-            <ul>
-                <li>
-                    <label class="mb-0 text-secondary" for="name">Username:</label>
-                    <input class="mb-4 w-100 border border-secondary" type="text" name="username" placeholder=" John Doe"
-                        required="required">
-                </li>
-                <li>
-                    <label class="mb-0 text-secondary" for="email">Password:</label>
-                    <input class="mb-4 w-100 border border-secondary" type="password" name="password" placeholder="*******"
-                        required="required">
-                </li>
-            </ul>
-            <a href="./signup.html">sign up here! owo</a>
+            <div class="row flex-center">
+                <h1>Furinder<span class="badge">Playdate Finder</span>
+                    <!-- Need to figure out how to make the photo apart of the header
+                    <img src="assets/images/4.png" width="90px" height="90px" class="no-border float-right"> -->
+                </h1>
+            </div>
+            <p>Some description here about what Furiender is all about and what it does: Teeth Mittens grooming vaccine
+                walk swimming nest good boy
+                furry tongue heel furry treats fish.
+                Cage run fast kitten dinnertime ball run foot park fleas throw house train licks stick dinnertime
+                window.</p>
+
+            <!-- Login block -->
+            <h3>Welcome back!</h3>
+            <p>Would you like to join FURiender? Make your pup's profile <a href="./signup.html">here</a></p>
+            <div class="row flex-center">
+                <h4>Login</h4>
+                <div class="col sm-4">
+                    <div class="form-group">
+                        <label for="paperInputs2">Email Address</label>
+                        <input class="input-block" type="text" id="paperInputs2">
+                    </div>
+                </div>
+                <div class="col sm-4">
+                    <div class="form-group">
+                        <label for="paperInputs3">Password</label>
+                        <input class="input-block" type="text" id="paperInputs3">
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-center">
+                <button class="btn-success">Login</button>
+            </div>
+            <!-- End of login block -->
+
         </div>
-                    <!-- profiles container  -->
-            <div id="main-container" class="container">
-                    <section class=" border-secondary float-left w-100 border p-5 bg-light mb-5 mt-4">                              
-                        <h2 class="text-success">profiles!</h2>
-                        <div class="float-left">
-                                <a href="">
-                            <img src="assets/images/DOGPIC" width="250px" height="250px" class="mt-3 mr-3" alt="Dog Name">
-                            <h3>Dog Name</h3>
-                        </div>
-                        <div class="float-left">
-                                <a href="">
-                            <img src="assets/images/DOGPIC" width="250px" height="250px" class="mt-3 mr-3" alt="Dog Name">
-                            <h3>Dog Name</h3>
-                        </div>
-                        <div class="float-left">
-                                <a href=""">
-                            <img src="assets/images/DOGPIC" width="250px" height="250px" class="mt-3 mr-3" alt="Dog Name">
-                            <h3>Dog Name</h3>
-                        </div>
-                        <div class="float-left">
-                                <a href="">
-                            <img src="assets/images/pug.jpg" width="250px" height="250px" class="mt-3 mr-3" alt="Dog Name">
-                            <h3>Dog Name</h3>
-                        </div>
-                        <div class="float-left">
-                                <a href="">
-                            <img src="assets/images/" width="250px" height="250px" class="mt-3 mr-3" alt="Dog Name">
-                            <h3>Dog Name</h3>
-                        </div>
-                        <div class="float-left">
-                                <a href="">
-                            <img src="assets/images/" width="250px" height="250px" class="mt-3 mr-3" alt="Dog Name">
-                            <h3>Dog Name</h3>
-                        </div>
-                    </section>
-            </div>    
-            <!-- profiles container collapse -->">
-                                    
+        <!-- End of main content box -->
+
+        <!-- Start of sample profile box -->
+        <div class="border-dashed" id="content-box">
+                <h3 class="text-success">Some FURiends that are waiting to play with you!</h3>
+            <div class="row">
+                <div class="col-4 col"><h4>Bata</h4>Mini toy poodle, age 4<img src="assets/images/Bata.jpg" width="180px" height="180px" alt="Dog Name"></div>
+                <div class="col-4 col"><h4>Teddy</h4>Cocka-poo, fun and full of love<img src="assets/images/BearTeddy.jpg" width="180px" height="180px" alt="Dog Name"></div>
+                <div class="col-4 col"><h4>Fora</h4>Sweet and loves to cuddle<img src="assets/images/Fora.jpg" width="180px" height="180px" alt="Dog Name"></div>
+            </div>
+            <div class="row">
+                    <div class="col-4 col"><h4>Milo</h4>Mini golden, age 1<img src="assets/images/Milo01.jpg" width="180px" height="180px" alt="Dog Name"></div>
+                    <div class="col-4 col"><h4>Placeholder</h4>puppy ipsum<img src="assets/images/BearTeddy.jpg" width="180px" height="180px" alt="Dog Name"></div>
+                    <div class="col-4 col"><h4>Placeholder</h4>puppy ipsum<img src="assets/images/Bata.jpg" width="180px" height="180px" alt="Dog Name"></div>
+                </div>
+
+        </div>
+        <!-- End of sample profile box -->
+
 
     </div>
+    <!-- End of container for content-box -->
+
 </body>
 
 </html>
