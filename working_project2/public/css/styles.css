@@ -1,0 +1,11 @@
+body {
+  background-image: url(../images/paws.png);
+  background-size: 400px 400px;
+}
+
+/* Logo on Welcome Page */
+#content-box {
+  background: white;
+  margin-top:80px;
+  padding: 60px;
+}
