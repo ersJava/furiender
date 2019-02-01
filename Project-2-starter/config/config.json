@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "TeddyB00",
-    "database": "pet_profileDB",
+    "password": "password",
+    "database": "exampledb",
     "host": "localhost",
     "port": "3306",
     "dialect": "mysql"
