@@ -1,7 +1,14 @@
 body {
     background-image: url(../images/paws.png);
     background-size: 400px 400px;
+    
 }
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
 
 /* Logo on Welcome Page */
 #content-box {
@@ -14,7 +21,7 @@ body {
 * {box-sizing: border-box}
 /* Full-width input fields */
   input[type=text], input[type=password] {
-  width: 100%;
+  width: 50%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
