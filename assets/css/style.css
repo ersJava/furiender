@@ -6,7 +6,17 @@ body {
 /* Logo on Welcome Page */
 #content-box {
     background: white;
-    margin-top:80px;
+    margin-top: 80px;
     padding: 60px;
 }
 
+.carousel-inner>.item>img {
+    height: 370px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border: white;
+}
