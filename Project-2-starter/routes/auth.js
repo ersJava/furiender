@@ -14,11 +14,14 @@ module.exports = (app, passport) => {
   });
 
   app.post(
-    '/signup',
-    passport.authenticate('local-signup', {
-      successRedirect: '/home',
-      failureRedirect: '/signup'
-    })
+    '/signup', (req, res) => {
+      console.log(req.body)
+    }
+    // passport.authenticate('local-signup', {
+    //   successRedirect: '/home',
+    //   failureRedirect: '/signup'
+    // }
+    // )
   );
 
   app.get('/home', isLoggedIn, (req, res) => {
