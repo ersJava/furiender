@@ -35,6 +35,7 @@ module.exports = (passport, user) => {
         };
 
         User.findOne({ where: { email: email } }).then(user => {
+          console.log(user);
           if (user) {
             return done(null, false, {
               message: 'That email is already taken'
