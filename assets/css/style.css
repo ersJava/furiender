@@ -7,6 +7,7 @@ body {
 #content-box {
     background: white;
     margin-top: 80px;
+    margin-bottom: 80px;
     padding: 60px;
 }
 
@@ -20,3 +21,13 @@ img {
     object-fit: contain;
     border: white;
 }
+
+  .carousel-control.right, .carousel-control.left {
+      background: none;
+  }
+
+  button {
+    padding: 40px;
+    font-size: 25px
+}
+

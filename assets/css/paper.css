@@ -77,8 +77,7 @@ pre {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: white;
-   
+
 }
 abbr[title] {
   border-bottom: none;
