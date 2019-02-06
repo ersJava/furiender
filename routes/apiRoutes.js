@@ -3,10 +3,10 @@ var furiends = require("../data/furiends");
 module.exports = function(app) {
 
   app.get("/api/furiends", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+    // db.Example.findAll({}).then(function(dbExamples) {
+      res.json(furiends);
     });
-  });
+  // });
 
 };
 
