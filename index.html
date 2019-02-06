@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/paper.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -30,73 +33,121 @@
 
             <!-- Login block -->
             <h3>Welcome back!</h3>
-            <p>Would you like to join FURiender? Make your pup's profile <a href="./signup.html">here</a></p>
             <div class="row flex-center">
                 <h4>Login</h4>
                 <div class="col sm-4">
                     <div class="form-group">
-                        <label for="paperInputs2">Email Address</label>
+                        <label for="paperInputs2">Username</label>
                         <input class="input-block" type="text" id="paperInputs2">
                     </div>
                 </div>
                 <div class="col sm-4">
                     <div class="form-group">
-                        <label for="paperInputs3">Password</label>
-                        <input class="input-block" type="text" id="paperInputs3">
+                        <label for="paperInputs3" type="password">Password</label>
+                        <input class="input-block" type="password" id="paperInputs3">
                     </div>
                 </div>
             </div>
             <div class="row flex-center">
-                <button class="btn-success">Login</button>
+                <div class="col-sm-4">
+                    <a href="./my_profile"><button class="btn-success">Login</button></a></div>
+                <div class="col-sm-4">
+                    <a href="./signup.html"><button class="btn-success">Create</button></a></div>
             </div>
-            <!-- End of login block -->
+            <!-- end of login in block -->
+            <div class="row flex-spaces child-borders">
+                <label class="paper-btn margin" for="modal-1">Open Modal!</label>
+            </div>
+            <input class="modal-state" id="modal-1" type="checkbox">
+            <div class="modal">
+                <label class="modal-bg" for="modal-1"></label>
+                <div class="modal-body">
+                    <label class="btn-close" for="modal-1">X</label>
+                    <h4 class="modal-title">Modal Title</h4>
+                    <h5 class="modal-subtitle">Modal Subtitle</h5>
+                    <p class="modal-text">This is andfsfsfsf example of modal which is implemented with pure CSS! :D</p>
+                    <label for="modal-1">Nice!</label>
+                </div>
+            </div>
+            <!-- need to add modal for log in -->
+
+            <!-- Start of carousel -->
+            <div class="row flex-center">
+                <div class="container">
+                    <h2>FURiends to Meet</h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="assets/images/Bata.jpg" alt="Los Angeles" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>Bata</h3>
+                                    <p>Loves to play!</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/images/BearTeddy.jpg" alt="Chicago" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>Teddy</h3>
+                                    <p>Favorite toy: mom's shoes</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/images/Fora.jpg" alt="New York" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>Fora</h3>
+                                    <p>Age: 3</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/images/Milo01.jpg" alt="Chicago" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>Milo</h3>
+                                    <p>Mini Golden Retriever</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/images/loki.jpg" alt="Chicago" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>Loki</h3>
+                                    <p>Age: 6</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">...</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">...</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <!-- End of main content box -->
-
-        <!-- Start of sample profile box -->
-        <div class="border-dashed" id="content-box">
-            <h3 class="text-success">Some FURiends that are waiting to play with you!</h3>
-            <div class="row">
-                <div class="col-sm-4 col">
-                    <h4>Bata</h4>Mini toy poodle, age 4
-                    <div class="shadow shadow-hover"><img src="assets/images/Bata.jpg" width="180px" height="180px" alt="Photo of FURiend"></div>
-                </div>
-
-                <div class="col-sm-4 col">
-                    <h4>Teddy</h4>Favorite toy: mom's shoes
-                    <div class="shadow shadow-hover"><img src="assets/images/BearTeddy.jpg" width="180px" height="180px"
-                            alt="Photo of FURiend"></div>
-                </div>
-                <div class="col-sm-4 col">
-                    <h4>Fora</h4>Loves to cuddle
-                    <div class="shadow shadow-hover"><img src="assets/images/Fora.jpg" width="180px" height="180px" alt="Photo of FURiend"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4 col">
-                    <h4>Milo</h4>Mini golden retriever, age 1
-                    <div class="shadow shadow-hover"><img src="assets/images/Milo01.jpg" width="180px" height="180px"
-                            alt="Photo of FURiend"></div>
-                </div>
-
-                <div class="col-sm-4 col">
-                    <h4>Placeholder</h4>some words puppy ipsum
-                    <div class="shadow shadow-hover"><img src="assets/images/BearTeddy.jpg" width="180px" height="180px"
-                            alt="Photo of FURiend"></div>
-                </div>
-                <div class="col-sm-4 col">
-                    <h4>Placeholder</h4>some words puppy ipsum
-                    <div class="shadow shadow-hover"><img src="assets/images/bata.jpg" width="180px" height="180px" alt="Photo of FURiend"></div>
-                </div>
-            </div>
-
-        </div>
-        <!-- End of sample profile box -->
-    </div>
-    <!-- End of container for content-box -->
-
+        <!-- End of container for content-box -->
 </body>
+
+<footer class=" text-center">
+    <div class="container">
+      <p class="mt-2">Copyright &copy;</p></div>
+</footer>
 
 </html>
