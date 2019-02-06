@@ -1,6 +1,6 @@
-require("dotenv").config();
 var express = require("express");
 const session = require('express-session');
+require("dotenv").config();
 // const cors = require('cors');
 // const errorHandler = require('errorhandler');
 var exphbs = require("express-handlebars");
@@ -47,6 +47,7 @@ app.set("view engine", "handlebars");
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+require("./routes/my_profile-api-routes")(app);
 require("./routes/auth.js")(app, passport);
 var syncOptions = { force: false };
 

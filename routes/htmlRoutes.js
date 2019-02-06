@@ -1,33 +1,55 @@
-var db = require("../models");
-var path = require('path');
+// *********************************************************************************
+// html-routes.js - this file offers a set of routes for sending users to the various html pages
+// *********************************************************************************
 
+// Dependencies
+// =============================================================
+var path = require("path");
+
+// Routes
+// =============================================================
 module.exports = function(app) {
-  // Load index page
+
+  // Each of the below routes just handles the HTML page that the user gets sent to.
+
+  // index route loads home.html
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+  // about route loads about.html
+  app.get("/about", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
-  // Render 404 page for any unmatched routes
+  // create_profile route loads create_profile.html
+  app.get("/create_profile", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/create_profile.html"));
+  });
 
+  // my_profile route loads my_profile.html
+  app.get("/my_profile", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/my_profile.html"));
+  });
+
+  // index route loads index.html
+  app.get("/index", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+  });
+
+  // placeholder route loads placeholder.html
+  app.get("/placeholder", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/placeholder.html"));
+  });
+
+  // questionnaire
+  app.get("/questions", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/questionnaire.html"));
+  });
+
+  // signup
   app.get("/signup", function(req, res) {
-    console.log(__dirname);
-    res.sendFile(path.join(__dirname, '../public/login_form.html'))
-  })
-  app.get("*", function(req, res) {
-    res.render("404");
+    res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
+
 };
