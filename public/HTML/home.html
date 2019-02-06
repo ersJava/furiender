@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/paper.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -27,9 +30,9 @@
             </button>
             <div class="collapsible-body">
                 <ul class="inline">
-                    <li><a href="#">Nav Link 1</a></li>
-                    <li><a href="#">Nav Link 2</a></li>
-                    <li><a href="#">Nav Link 3</a></li>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">Meetup</a></li>
                 </ul>
             </div>
         </div>
@@ -43,7 +46,89 @@
 
             <h1>Home page</h1>
             <p>Comments: this page should be the main page where you can do the filtred search or browse</p>
-
+            <div class="row flex-center">
+                    <div class="container">
+                        <h2>FURiends to Meet</h2>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                            </ol>
+    
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+    
+    
+                                <div class="item active">
+                                    <img src="assets/images/Bata.jpg" alt="Los Angeles" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Bata</h3>
+                                        <p>Loves to play!</p>
+                                    </div>
+    
+                    <div class="col-sm-4 col">
+                        <h4>Teddy</h4>Favorite toy: mom's shoes
+                        <div class="shadow shadow-hover"><img src="assets/images/BearTeddy.jpg" width="180px" height="180px"
+                                alt="Photo of FURiend"></div>
+                    </div>
+                    <div class="col-sm-4 col">
+                        <h4>Fora</h4>Loves to cuddle
+                        <div class="shadow shadow-hover"><img src="assets/images/Fora.jpg" width="180px" height="180px" alt="Photo of FURiend"></div>
+                    </div> 
+                </div>
+    
+    
+                                <div class="item">
+                                    <img src="assets/images/BearTeddy.jpg" alt="Chicago" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Teddy</h3>
+                                        <p>Favorite toy: mom's shoes</p>
+                                    </div>
+                                </div>
+    
+                                <div class="item">
+                                    <img src="assets/images/Fora.jpg" alt="New York" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Fora</h3>
+                                        <p>Age: 3</p>
+                                    </div>
+                                </div>
+    
+                                <div class="item">
+                                    <img src="assets/images/Milo01.jpg" alt="Chicago" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Milo</h3>
+                                        <p>Mini Golden Retriever</p>
+                                    </div>
+                                </div>
+    
+                                <div class="item">
+                                    <img src="assets/images/loki.jpg" alt="Chicago" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Loki</h3>
+                                        <p>Age: 6</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">...</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">...</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+        </div>
         </div>
         <!-- End of sample profile box -->
     </div>
