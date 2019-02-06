@@ -6,6 +6,7 @@ module.exports = (app, passport) => {
   });
 
   app.get('/signup', (req, res) => {
+    
     res.render('signup');
   });
 
@@ -15,7 +16,10 @@ module.exports = (app, passport) => {
 
   app.post(
     '/signup', (req, res) => {
+      console.log("this is a test");
       console.log(req.body)
+      res.send('success');
+      // res.json({test:'this is a test'});
     }
     // passport.authenticate('local-signup', {
     //   successRedirect: '/home',

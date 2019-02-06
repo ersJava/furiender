@@ -37,14 +37,37 @@
             password: $('#newPassword').val().trim(),
         }
         console.log(user)
+
+        
+
         $.ajax("/signup", {
             type: "POST",
             data: user
         }).then(
-            function() {
-                console.log("devouring burger!");
+            function(res) {
+                console.log(res);
+                console.log("It's working");
             }
         )
+
+
+
+
+
+
+    //     function update(id) {
+    //     // console.log()
+    //     $.ajax("/signup", {
+    //         type: "POST",
+    //         data: user
+    //     }).then(
+    //         function(res) {
+    //             console.log(res);
+    //             console.log("this is a test");
+    //         }
+    //     )
+    // } 
+
     })
 </script>
 </html>
