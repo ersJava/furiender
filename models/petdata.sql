@@ -1,0 +1,2 @@
+INSERT INTO furinderProfile(profileName, petName, locationByBoroughs,  breed, weight, age, energy, funFacts, favoriteFood, favoriteToy, favoritePark)
+VALUES ("Andy","Sugar","Queens", "Husky", "30", "8", "I have one blue eye", "beef bone", "ball", "madison square park");
