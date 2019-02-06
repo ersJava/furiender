@@ -1,4 +1,5 @@
 var db = require("../models");
+var path = require('path');
 
 module.exports = function(app) {
   // Load index page
@@ -21,6 +22,11 @@ module.exports = function(app) {
   });
 
   // Render 404 page for any unmatched routes
+
+  app.get("/signup", function(req, res) {
+    console.log(__dirname);
+    res.sendFile(path.join(__dirname, '../public/login_form.html'))
+  })
   app.get("*", function(req, res) {
     res.render("404");
   });

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Your Profile</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/paper.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/questionaire.css">
+</head>
+
+<body>
+    
+    <!-- Nav bar starts -->
+    <nav class="border fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href="#">Furinder<span class="badge"> Playdate Finder</a></span></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <button>
+                <label for="collapsible1">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </label>
+            </button>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">Meetup</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav bar ends -->
+
+    <!-- Start of container for content-box -->
+    <div class="container">
+        <!-- Main content box -->
+        <div class="border-dashed" id="content-box">
+
+            <h1>Welcome!</h1>
+            <p>Hello friend!</p>
+                <p>Just to get to know you, we're gonna ask you
+                some questions about you and your pet. If you have more than one,
+                dont worry! Just click add more once you're finished registering
+                your first pet. :3
+            </p>
+            <form action="action_page.php">
+                    <div class="container flex-center form-group">
+
+                        
+
+
+                    
+                      <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Enter Your Name" name="name" required>
+                  <br>
+                      <label for="name"><b>Age</b></label>
+                      <input type="number" placeholder="Enter Your Age" name="age" required>
+                  <br>
+                  <hr>
+                      <label for="petName"><b>Pet Name</b></label>
+                      <input type="text" placeholder="Enter Username" name="petName" required>
+                  <br>
+                      <label for="location"><b>Location</b></label>
+                      <input type="text" placeholder="Enter Borough" name="location" required>
+                  <br>
+                      <label for="breed"><b>Pet Breed</b></label>
+                      <input type="text" placeholder="Enter Pet Breed" name="breed" required>
+                  <br>
+                  <label for="petAge"><b>Pet Age</b></label>
+                      <input type="number" placeholder="Enter Pet Age" name="petAge" required>
+                  <br>
+                  <label for="petWeight"><b>Pet Weight (lbs)</b></label>
+                      <input type="number" placeholder="Enter Pet Weight" name="petWeight" required>
+                  <br>
+                      <label for="energyLevel">Pet Energy Level (1-10)</label>
+                      <select id="energyLevel">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                     <select> 
+                  <br>
+                  <hr>
+                    <label for="funFact"><b>Fun Fact About your Pet</b></label>
+                    <input type="text" placeholder="Enter a Fun Fact about your Pet!" name="funFact" required>
+                  <br>
+                    <label for="food"><b>Pet's Favorite Food</b></label>
+                    <input type="text" placeholder="Enter Your Pet's Favorite Food!" name="food" required>
+                  <br>
+                    <label for="toy"><b>Pet's Favorite Toy</b></label>
+                    <input type="text" placeholder="Enter Your Pet's Favorite Toy!" name="toy" required>
+                  <br>
+                    <label for="park"><b>Pet's Favorite Park</b></label>
+                    <input type="text" placeholder="Enter Your Pet's Favorite Park!" name="park" required>
+                  <br>
+                      <p>Is everything correct?</p>
+                      <label>
+                            <input type="checkbox" checked="checked" name="correct?" style="margin-bottom:15px">
+                          </label>
+                  <br>
+                      <div class="clearfix">
+                        <a href="./home.html"><button type="button" class="skipbtn col sm-5">Skip</button></a>
+                        <a href="./home.html"><button type="submit" class="savebtn col sm-5">Save!</button></a>
+                      </div>
+                    </div>
+                </form>
+
+        </div>
+        <!-- End of sample profile box -->
+    </div>
+    <!-- End of container for content-box -->
+
+</body>
+
+<footer class=" text-center">
+    <div class="container">
+      <p class="mt-2"><small>Copyright &copy;</small></p></div>
+</footer>
+
+</html>
