@@ -1,0 +1,33 @@
+body {
+    background-image: url(../images/paws.png);
+    background-size: 400px 400px;
+}
+
+/* Logo on Welcome Page */
+#content-box {
+    background: white;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 60px;
+}
+
+.carousel-inner>.item>img {
+    height: 370px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border: white;
+}
+
+  .carousel-control.right, .carousel-control.left {
+      background: none;
+  }
+
+  button {
+    padding: 40px;
+    font-size: 25px
+}
+
