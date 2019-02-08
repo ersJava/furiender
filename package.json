@@ -1,0 +1,38 @@
+{
+  "name": "furiender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersJava/furiender.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ersJava/furiender/issues"
+  },
+  "homepage": "https://github.com/ersJava/furiender#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "bcrypt-nodejs": "0.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mysql2": "^1.6.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.42.0"
+  }
+}

@@ -19,6 +19,11 @@ module.exports = function(sequelize, DataTypes) {
 
       },
 
+      age: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+
       petName: {
           type: DataTypes.STRING,
           allowNull: true,
@@ -31,19 +36,22 @@ module.exports = function(sequelize, DataTypes) {
       },
 
       breed: {
-          type: DataTypes.STRING,
-          allowNull: true
+        type: DataTypes.STRING,
+        allowNull: true
       },
+
+
+      petAge: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
 
       weight: {
           type: DataTypes.INTEGER,
           allowNull: true
       },
 
-      age: {
-          type: DataTypes.INTEGER,
-          allowNull: true
-      },
+      
 
       energy: {
           type: DataTypes.INTEGER,

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Questionaire Page</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/paper.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/questionaire.css">
+    <link rel="stylesheet" type="text/css" href="../styles/paper.css">
+    <link rel="stylesheet" type="text/css" href="..styles/style.css">
+    <link rel="stylesheet" type="text/css" href="..styles/questionaire.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -49,7 +51,7 @@
                 dont worry! Just click add more once you're finished registering
                 your first pet. :3
             </p>
-            <form action="action_page.php">
+            <form action="action_page.php" action="" method="POST">
                     <div class="container flex-center form-group">
 
                         
@@ -57,26 +59,26 @@
 
                     
                       <label for="name"><b>Name</b></label>
-                      <input type="text" placeholder="Enter Your Name" name="name" required>
+                      <input type="text" id="name" placeholder="Enter Your Name" name="name" required>
                   <br>
                       <label for="name"><b>Age</b></label>
-                      <input type="number" placeholder="Enter Your Age" name="age" required>
+                      <input type="number" id="age" placeholder="Enter Your Age" name="age" required>
                   <br>
                   <hr>
                       <label for="petName"><b>Pet Name</b></label>
-                      <input type="text" placeholder="Enter Username" name="petName" required>
+                      <input type="text" id="petName"placeholder="Enter Username" name="petName" required>
                   <br>
                       <label for="location"><b>Location</b></label>
-                      <input type="text" placeholder="Enter Borough" name="location" required>
+                      <input type="text" id="location" placeholder="Enter Borough" name="location" required>
                   <br>
                       <label for="breed"><b>Pet Breed</b></label>
-                      <input type="text" placeholder="Enter Pet Breed" name="breed" required>
+                      <input type="text" id="breed" placeholder="Enter Pet Breed" name="breed" required>
                   <br>
                   <label for="petAge"><b>Pet Age</b></label>
-                      <input type="number" placeholder="Enter Pet Age" name="petAge" required>
+                      <input type="number" id="petAge" placeholder="Enter Pet Age" name="petAge" required>
                   <br>
                   <label for="petWeight"><b>Pet Weight (lbs)</b></label>
-                      <input type="number" placeholder="Enter Pet Weight" name="petWeight" required>
+                      <input type="number" id="weight" placeholder="Enter Pet Weight" name="petWeight" required>
                   <br>
                       <label for="energyLevel">Pet Energy Level (1-10)</label>
                       <select id="energyLevel">
@@ -94,16 +96,16 @@
                   <br>
                   <hr>
                     <label for="funFact"><b>Fun Fact About your Pet</b></label>
-                    <input type="text" placeholder="Enter a Fun Fact about your Pet!" name="funFact" required>
+                    <input type="number" id="funFacts" placeholder="Enter a Fun Fact about your Pet!" name="funFact" required>
                   <br>
                     <label for="food"><b>Pet's Favorite Food</b></label>
-                    <input type="text" placeholder="Enter Your Pet's Favorite Food!" name="food" required>
+                    <input type="text" id="favoriteFood" placeholder="Enter Your Pet's Favorite Food!" name="food" required>
                   <br>
                     <label for="toy"><b>Pet's Favorite Toy</b></label>
-                    <input type="text" placeholder="Enter Your Pet's Favorite Toy!" name="toy" required>
+                    <input type="text" id="favoriteToy" placeholder="Enter Your Pet's Favorite Toy!" name="toy" required>
                   <br>
                     <label for="park"><b>Pet's Favorite Park</b></label>
-                    <input type="text" placeholder="Enter Your Pet's Favorite Park!" name="park" required>
+                    <input type="text" id="favoritePark" placeholder="Enter Your Pet's Favorite Park!" name="park" required>
                   <br>
                       <p>Is everything correct?</p>
                       <label>
@@ -111,8 +113,8 @@
                           </label>
                   <br>
                       <div class="clearfix">
-                        <a href="./home.html"><button type="button" class="skipbtn col sm-5">Skip</button></a>
-                        <a href="./home.html"><button type="submit" class="savebtn col sm-5">Save!</button></a>
+                        <!-- <a href="./home.html"><button type="button" class="skipbtn col sm-5">Skip</button></a> -->
+                        <a href=""><button id="submit" type="submit" class="savebtn col sm-5">Save!</button></a>
                       </div>
                     </div>
                 </form>
@@ -121,7 +123,8 @@
         <!-- End of sample profile box -->
     </div>
     <!-- End of container for content-box -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/questionaire.js"></script>
 </body>
 
 <footer class=" text-center">
